@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios de HTML</title>
+    <style>
+    #conteudo {
+        padding: 30px 0px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><b>Exercícios</b></h1>
+    </header>
+    <nav>
+        <a href ="teste.html">00 - Teste</a> |
+        <a href ="AnatomiaHtml.html">01 - Anatomia HTML</a> |
+        <a href ="AnatomiaTag.html">02 - Anatomia Tag</a> |
+        <a href ="poucoDeCSS.html">03 - Pouco de CSS</a> |
+        <a href ="textopuro.html">04 - Texto Puro</a> |
+        <a href ="texto1.html">05 - Texto 1</a> | 
+        <a href ="listas.html">06 - Listas</a> |
+        <a href ="listas2.html">07 - Listas 2</a> |
+        <a href ="links.html">08 - Links</a> |
+        <a href ="links2.html">09 - Links 2</a> |
+        <a href ="tabela.html">10 - Tabela</a> |
+        <a href ="C:\Users\Thiago Pires\Desktop\exercicios-js\html\Formulário\form1.html">11 - Formulário #1</a> |
+        <a href ="imagens.html">11 - Imagens</a> |
+        <a href ="video.html">12 - Vídeo</a> |</nav> 
+
+    <section id="conteudo"></section>
+    <footer><br>
+        <b>Curso de Web Moderno (Cod3r Udemy)
+        </footer></b>
+        <br>
+    <script>
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+            
+            link.onclick = function(e) {
+            fetch(link.href)
+            .then(resp => resp.text())
+            .then(html => conteudo.innerHTML = html)
+            }
+        })
+        
+    </script>
+</body>
+</html>

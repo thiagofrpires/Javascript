@@ -1,0 +1,13 @@
+.imagens li img{
+    width: 120px;
+}
+ul {
+    list-style-type:none;
+    float: left;
+}
+img{
+    width:300px;
+}
+#trocarimg{
+    margin-left:100px;
+}
